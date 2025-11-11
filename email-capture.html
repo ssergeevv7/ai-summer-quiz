@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Results - GBSB Global AI Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.hsforms.net/forms/embed/48585497.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-placeholder">
+                <h1>GBSB Global</h1>
+            </div>
+        </header>
+
+        <main class="email-capture-section">
+            <div class="results-teaser">
+                <div class="loading-animation">
+                    <div class="spinner"></div>
+                </div>
+                <h1>Calculating Your AI Persona...</h1>
+                <p class="subtitle">You're almost there! Enter your email to unlock your personalized results and program recommendations.</p>
+            </div>
+
+            <div class="form-container">
+                <!-- HubSpot Form -->
+                <div class="hs-form-frame" data-region="na1" data-form-id="e857ed2b-897d-43c9-ab9a-af1031ad2ad3" data-portal-id="48585497"></div>
+                
+                <p class="privacy-note">
+                    🔒 We respect your privacy. You'll also receive insider tips about the program and early bird reminders (25% off until Dec 22!). Unsubscribe anytime.
+                </p>
+            </div>
+
+            <div class="benefits-list">
+                <h3>What You'll Get:</h3>
+                <ul>
+                    <li>✓ Your personalized AI Persona profile</li>
+                    <li>✓ Customized curriculum recommendations</li>
+                    <li>✓ Career pathway insights</li>
+                    <li>✓ Early bird discount reminders (Save 25%!)</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 GBSB Global. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Listen for HubSpot form submission
+        window.addEventListener('message', event => {
+            if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmitted') {
+                // Form submitted successfully, redirect to results
+                setTimeout(() => {
+                    window.location.href = 'results.html';
+                }, 1000);
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your AI Persona - GBSB Global</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-placeholder">
+                <h1>GBSB Global</h1>
+            </div>
+        </header>
+
+        <main class="results-section">
+            <!-- Persona Reveal -->
+            <div class="persona-reveal" id="personaReveal">
+                <h1 class="persona-title" id="personaTitle">Loading your results...</h1>
+                <p class="persona-subtitle" id="personaSubtitle"></p>
+            </div>
+
+            <!-- Persona Profile -->
+            <div class="persona-profile">
+                <h2>Your Profile</h2>
+                <p id="personaProfile"></p>
+            </div>
+
+            <!-- Why This Program Section -->
+            <div class="program-fit">
+                <h2>Why This Program Is Perfect For You</h2>
+                
+                <div class="fit-overview" id="fitOverview"></div>
+
+                <div class="week-breakdown" id="weekBreakdown"></div>
+
+                <div class="standout-moment" id="standoutMoment"></div>
+
+                <div class="career-path" id="careerPath"></div>
+
+                <div class="challenge" id="challenge"></div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-results">
+                <h2>Ready to Make This Your Summer?</h2>
+                <p class="early-bird-reminder">🎁 <strong>Early Bird Special:</strong> Save 25% if you register before December 22, 2025</p>
+                <a href="#" class="btn-primary btn-large">Apply Now - 25% Discount Available</a>
+                <p class="social-proof">Join 50+ students from 15+ countries already registered</p>
+            </div>
+
+            <!-- Share Section -->
+            <div class="share-section">
+                <h3>Share Your AI Persona</h3>
+                <div class="share-buttons">
+                    <button class="btn-social btn-instagram" onclick="shareInstagram()">📸 Instagram</button>
+                    <button class="btn-social btn-linkedin" onclick="shareLinkedIn()">💼 LinkedIn</button>
+                    <button class="btn-social btn-whatsapp" onclick="shareWhatsApp()">💬 WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Download PDF -->
+            <div class="download-section">
+                <button class="btn-secondary" onclick="downloadResults()">📄 Download Your Full Results (PDF)</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 GBSB Global. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
